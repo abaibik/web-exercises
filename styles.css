@@ -90,8 +90,14 @@ select {
   --shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
+a:visited,
+a:link {
+  color: black;
+}
+
 body {
   background-color: var(--beige);
+  height: 100vh;
 }
 
 header {
@@ -101,9 +107,11 @@ header {
   text-align: center;
   padding: 2rem 10rem;
   border-bottom: var(--border);
+  background-color: var(--light-blue);
 }
 
 main {
+  padding: 11rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -125,7 +133,7 @@ main {
 
 .bookmark-button {
   position: absolute;
-  right: 10rem;
+  right: 5rem;
   top: -1rem;
   z-index: 1;
 }
@@ -164,7 +172,6 @@ main {
 .answer-button:hover {
   padding-right: 2rem;
   padding-left: 1rem;
-  background-color: var(--dark-blue);
 }
 
 .answer-button:hover:after {
@@ -190,7 +197,7 @@ main {
   box-shadow: var(--shadow);
 }
 
-.tag:hover {
+a:hover {
   background-color: var(--dark-blue);
 }
 
@@ -198,12 +205,18 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding: 5rem 10rem;
+  height: 5rem;
   display: flex;
   justify-content: space-around;
-  gap: 2rem;
+  align-items: center;
   border-top: var(--border);
+  background-color: var(--light-blue);
 }
 
-.big-icon {
+.big-icon-wrapper {
+  width: calc(100% / 3);
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
 }
