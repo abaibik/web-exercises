@@ -1,0 +1,76 @@
+@import "modernReset.css";
+@import "./components/card.css";
+
+/*************/
+/*main styles*/
+/*************/
+
+* {
+  --beige: rgb(246, 244, 235);
+  --light-blue: rgb(145, 200, 228);
+  --medium-blue: rgb(116, 155, 194);
+  --dark-blue: rgb(70, 130, 169);
+  --border: 2px solid var(--dark-blue);
+  --thin-border: 1px solid var(--dark-blue);
+  --shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+
+  font-family: "ADLaM Display", cursive;
+}
+
+a:visited,
+a:link {
+  color: black;
+}
+
+a:hover {
+  background-color: var(--dark-blue);
+}
+
+a:link:active {
+  background-color: var(--dark-blue);
+}
+
+body {
+  background-color: var(--beige);
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  position: fixed;
+  top: 0;
+  text-align: center;
+  padding: 2rem 10rem;
+  border-bottom: var(--border);
+  background-color: var(--light-blue);
+}
+
+main {
+  width: 100%;
+  padding: 11rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: var(--border);
+  background-color: var(--light-blue);
+}
+
+.big-icon-wrapper {
+  width: calc(100% / 3);
+  height: 100%;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
