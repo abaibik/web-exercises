@@ -1,5 +1,10 @@
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+
 .card {
-  width: 25rem;
+  width: 20rem;
   aspect-ratio: 1;
   border: var(--border);
   border-radius: 2rem;
@@ -30,7 +35,7 @@
 }
 
 .icon:hover {
-  font-variation-settings: "FILL" 1;
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
 }
 
 .card * {
@@ -82,9 +87,10 @@
 
 .tag {
   text-decoration: none;
-  padding: 1rem;
+  font-size: 10px;
+  padding: 5px;
   border: var(--thin-border);
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-color: var(--medium-blue);
   box-shadow: var(--shadow);
 }
