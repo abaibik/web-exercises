@@ -31,7 +31,6 @@ a:link:active {
 }
 
 body {
-  background-image: url(../images/background.jpg);
   background-color: var(--beige);
   min-height: 100vh;
   display: grid;
