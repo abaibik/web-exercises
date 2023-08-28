@@ -13,7 +13,14 @@
 
 @media (max-width: 390px) {
   .card {
-    height: 25rem;
+    height: 45vh;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .card {
+    width: 45vw;
+    height: 16rem;
   }
 }
 
