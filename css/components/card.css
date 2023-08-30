@@ -28,13 +28,13 @@
   position: absolute;
   right: 5rem;
   top: -1rem;
-  background-color: var(--beige);
+  background-color: #88929d;
   transition: 0.5s;
 }
 
 .bookmark-button:hover,
 .bookmark-button:active {
-  background-color: var(--beige);
+  background-color: #9ca6b0;
   box-shadow: var(--shadow);
 }
 
