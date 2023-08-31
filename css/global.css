@@ -38,6 +38,10 @@ a:link:active {
   background-color: var(--dark-blue);
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   background-image: var(--gradient);
   min-height: 100vh;
