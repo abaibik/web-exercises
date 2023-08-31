@@ -14,3 +14,22 @@ input {
 .form-button {
   margin: 3rem 0 3rem;
 }
+
+.body-fresh {
+  display: flex;
+  flex-direction: column;
+  height: 55rem;
+}
+
+.container-fresh {
+  padding-top: 10rem;
+}
+
+.small-card {
+  width: 15rem;
+  height: 10rem;
+}
+
+.small-card-bookmark {
+  background-color: #cbd1d7;
+}
