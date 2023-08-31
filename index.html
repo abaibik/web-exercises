@@ -19,25 +19,28 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
 
+    <!-- Index.js -->
+
     <title>Quiz App Baibik A.</title>
   </head>
   <body>
     <header>
-      <h1>Quiz App</h1>
+      <h1>Fashion Quiz App</h1>
     </header>
 
     <main>
-      <article class="card">
-        <a class="bookmark-button"
-          ><span class="material-symbols-outlined icon"> bookmark </span>
+      <article id="cardId" class="card">
+        <a id="bookmarkButton" class="bookmark-button"
+          ><span id="bookmarkIcon" class="material-symbols-outlined icon">
+            bookmark
+          </span>
         </a>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quam atque
-          aspernatur animi doloribus delectus repellendus dolor enim. Placeat,
-          ab?
-        </p>
+        <div>
+          <p id="question"></p>
+          <p id="answer" class="hidden"></p>
+        </div>
 
-        <a class="answer-button" href="#" role="button">Show Answer</a>
+        <a id="answerButton" class="answer-button" role="button">Show Answer</a>
 
         <div class="tags">
           <a class="tag" href="#">#html</a>
@@ -61,6 +64,7 @@
       >
     </footer>
 
+    <script src="data.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

@@ -15,6 +15,9 @@
   .card {
     height: 45vh;
   }
+  .bookmark-button {
+    background-color: #435567;
+  }
 }
 
 @media screen and (orientation: landscape) {
@@ -28,13 +31,13 @@
   position: absolute;
   right: 5rem;
   top: -1rem;
-  background-color: var(--beige);
+  background-color: #88929d;
   transition: 0.5s;
 }
 
 .bookmark-button:hover,
 .bookmark-button:active {
-  background-color: var(--beige);
+  background-color: #9ca6b0;
   box-shadow: var(--shadow);
 }
 
@@ -45,6 +48,7 @@
 .icon:hover,
 .icon:active {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;
+  cursor: pointer;
 }
 
 .card * {
@@ -77,6 +81,7 @@
 .answer-button:focus {
   padding-right: 2rem;
   padding-left: 1rem;
+  cursor: pointer;
 }
 
 .answer-button:hover:after,

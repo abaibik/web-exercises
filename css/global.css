@@ -13,6 +13,14 @@
   --border: 2px solid var(--dark-blue);
   --thin-border: 1px solid var(--dark-blue);
   --shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  --gradient: linear-gradient(
+    to bottom,
+    #435567,
+    #6e7c8b,
+    #9ca6b0,
+    #cbd1d7,
+    #fdfeff
+  );
 
   font-family: "ADLaM Display", cursive;
 }
@@ -30,8 +38,12 @@ a:link:active {
   background-color: var(--dark-blue);
 }
 
+.hidden {
+  display: none;
+}
+
 body {
-  background-color: var(--beige);
+  background-image: var(--gradient);
   min-height: 100vh;
   display: grid;
   place-items: center;
