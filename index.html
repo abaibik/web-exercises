@@ -20,7 +20,6 @@
     />
 
     <!-- Index.js -->
-    <script src="index.js"></script>
 
     <title>Quiz App Baibik A.</title>
   </head>
@@ -30,9 +29,11 @@
     </header>
 
     <main>
-      <article class="card">
-        <a class="bookmark-button"
-          ><span class="material-symbols-outlined icon"> bookmark </span>
+      <article id="cardId" class="card">
+        <a id="bookmarkButton" class="bookmark-button"
+          ><span id="bookmarkIcon" class="material-symbols-outlined icon">
+            bookmark
+          </span>
         </a>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quam atque
@@ -40,7 +41,7 @@
           ab?
         </p>
 
-        <a class="answer-button" href="#" role="button">Show Answer</a>
+        <a id="answerButton" class="answer-button" role="button">Show Answer</a>
 
         <div class="tags">
           <a class="tag" href="#">#html</a>
@@ -63,5 +64,6 @@
         ><span class="material-symbols-outlined"> person </span></a
       >
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>

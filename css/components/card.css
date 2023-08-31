@@ -15,6 +15,9 @@
   .card {
     height: 45vh;
   }
+  .bookmark-button {
+    background-color: #435567;
+  }
 }
 
 @media screen and (orientation: landscape) {

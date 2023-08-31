@@ -1,4 +1,4 @@
-[
+const quizData = [
   {
     id: 1,
     question: "Which designer invented the polo shirt?",
