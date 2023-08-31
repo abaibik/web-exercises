@@ -27,16 +27,16 @@
       <h1>Add new answer</h1>
     </header>
 
-    <main>
-      <form>
-        <label for="question">Your question:</label><br />
-        <textarea name="question"></textarea><br />
+    <main id="formContainer">
+      <form id="form">
+        <label for="questionId">Your question:</label><br />
+        <textarea id="questionId" name="question"></textarea><br />
 
-        <label for="answer">Your answer:</label><br />
-        <textarea name="answer"></textarea><br />
+        <label for="answerId">Your answer:</label><br />
+        <textarea id="answerId" name="answer"></textarea><br />
 
-        <label for="tag">Tag:</label><br />
-        <input type="text" name="tag" /><br />
+        <label for="tagId">Tag:</label><br />
+        <input id="tagId" type="text" name="tag" /><br />
 
         <button class="answer-button form-button" type="submit">Submit</button>
       </form>
@@ -60,7 +60,6 @@
       >
     </footer>
 
-    <script src="data.js"></script>
-    <script src="index.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>

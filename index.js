@@ -6,7 +6,6 @@ const questionElement = card.querySelector("#question");
 const answerElement = card.querySelector("#answer");
 
 bookmarkButton.addEventListener("click", () => {
-  //const fillIcon = '"FILL" 1, "wght" 700, "GRAD" 200, "opsz" 48;';
   if (icon.style.fontVariationSettings === '"FILL" 0') {
     icon.style.fontVariationSettings = '"FILL" 1';
   } else {

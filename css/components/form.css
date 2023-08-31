@@ -8,9 +8,9 @@ input {
   border: var(--border);
   border-radius: 2rem;
   box-shadow: var(--shadow);
+  text-align: center;
 }
 
 .form-button {
-  margin-top: 2rem;
-  align-self: center;
+  margin: 3rem 0 3rem;
 }
