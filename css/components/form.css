@@ -1,0 +1,35 @@
+form {
+  padding-top: 2rem;
+}
+
+textarea,
+input {
+  margin-top: 1rem;
+  border: var(--border);
+  border-radius: 2rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.form-button {
+  margin: 3rem 0 3rem;
+}
+
+.body-fresh {
+  display: flex;
+  flex-direction: column;
+  height: 55rem;
+}
+
+.container-fresh {
+  padding-top: 10rem;
+}
+
+.small-card {
+  width: 15rem;
+  height: 10rem;
+}
+
+.small-card-bookmark {
+  background-color: #cbd1d7;
+}

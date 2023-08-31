@@ -1,5 +1,6 @@
 @import "./modernReset.css";
 @import "./components/card.css";
+@import "./components/form.css";
 
 /*************/
 /*main styles*/
@@ -80,7 +81,7 @@ footer {
 }
 
 .big-icon-wrapper {
-  width: calc(100% / 3);
+  width: calc(100% / 4);
   height: 100%;
   display: grid;
   place-items: center;
