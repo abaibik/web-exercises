@@ -1,0 +1,16 @@
+form {
+  padding-top: 2rem;
+}
+
+textarea,
+input {
+  margin-top: 1rem;
+  border: var(--border);
+  border-radius: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.form-button {
+  margin-top: 2rem;
+  align-self: center;
+}
