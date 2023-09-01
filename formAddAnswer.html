@@ -30,10 +30,19 @@
     <main id="formContainer">
       <form id="form">
         <label for="questionId">Your question:</label><br />
-        <textarea id="questionId" name="question"></textarea><br />
+        <textarea id="questionId" name="question" maxlength="150"></textarea>
+        <p class="small-text">
+          <span id="questionCharLeft">150</span
+          ><span>/150 characters left</span>
+        </p>
+        <br />
 
         <label for="answerId">Your answer:</label><br />
-        <textarea id="answerId" name="answer"></textarea><br />
+        <textarea id="answerId" name="answer" maxlength="150"></textarea>
+        <p class="small-text">
+          <span id="answerCharLeft">150</span><span>/150 characters left</span>
+        </p>
+        <br />
 
         <label for="tagId">Tag:</label><br />
         <input id="tagId" type="text" name="tag" /><br />

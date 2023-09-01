@@ -1,5 +1,9 @@
 const form = document.querySelector("#form");
 const formContainer = document.querySelector("#formContainer");
+const questionInput = form.querySelector("#questionId");
+const answerInput = form.querySelector("#answerId");
+const questionInputCharacters = form.querySelector("#questionCharLeft");
+const answerInputCharacters = form.querySelector("#answerCharLeft");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -33,4 +37,14 @@ form.addEventListener("submit", (event) => {
 
   document.body.classList.add("body-fresh");
   formContainer.classList.add("container-fresh");
+});
+
+questionInput.addEventListener("input", (event) => {
+  const characters = event.target.value.length;
+  questionInputCharacters.textContent = 150 - characters;
+});
+
+answerInput.addEventListener("input", (event) => {
+  const characters = event.target.value.length;
+  answerInputCharacters.textContent = 150 - characters;
 });
