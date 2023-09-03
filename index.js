@@ -5,6 +5,7 @@ const answerButton = card.querySelector("#answerButton");
 const questionElement = card.querySelector("#question");
 const answerElement = card.querySelector("#answer");
 const body = document.querySelector("body");
+const nextButton = card.querySelector("#nextButton");
 
 let bookmarked = false;
 
@@ -26,17 +27,27 @@ function changeButtonName() {
   }
 }
 
-function showContent() {
-  questionElement.textContent = quizData[1].question;
-  answerElement.textContent = quizData[1].answer;
+function showContent(i) {
+  questionElement.textContent = quizData[i].question;
+  answerElement.textContent = quizData[i].answer;
 }
+
+let index = 0;
+
+nextButton.addEventListener("click", () => {
+  index++;
+  if (index === quizData.length) {
+    index = 0;
+  }
+  showContent(index);
+});
+
+showContent(0);
 
 function toggleContent() {
   answerElement.classList.toggle("hidden");
   questionElement.classList.toggle("hidden");
 }
-
-showContent();
 
 answerButton.addEventListener("click", () => {
   changeButtonName();
