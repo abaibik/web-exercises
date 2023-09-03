@@ -43,12 +43,24 @@ a:link:active {
 }
 
 body {
-  background: var(--gradient);
-  background-image: url("../images/landscape/1.jpg");
-  background-size: cover;
   height: 100vh;
   display: grid;
   place-items: center;
+  background: var(--gradient);
+}
+
+@media (max-width: 390px) {
+  body {
+    background-image: url("../images/vertical/1.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body {
+    background-image: url("../images/landscape/1.jpg");
+    background-size: cover;
+  }
 }
 
 header {
