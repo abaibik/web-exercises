@@ -4,6 +4,7 @@ const icon = card.querySelector("#bookmarkIcon");
 const answerButton = card.querySelector("#answerButton");
 const questionElement = card.querySelector("#question");
 const answerElement = card.querySelector("#answer");
+const body = document.querySelector("body");
 
 let bookmarked = false;
 
@@ -41,3 +42,20 @@ answerButton.addEventListener("click", () => {
   changeButtonName();
   toggleContent();
 });
+
+let i = 1;
+const imageCount = 5;
+let slideTime = 3000; // 3 seconds
+
+function changePicture() {
+  body.classList.remove(`background-${i}`);
+  if (i < imageCount) {
+    i++;
+  } else {
+    i = 1;
+  }
+  body.classList.add(`background-${i}`);
+  setTimeout(changePicture, slideTime);
+}
+
+window.onload = changePicture;

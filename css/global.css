@@ -10,6 +10,7 @@
   --light-gray: #9ca6b0;
   --medium-gray: #6e7c8b;
   --dark-gray: #435567;
+  --opacity-background: rgba(110, 124, 139, 0.5);
   --border: 2px solid #6e7c8b;
   --thin-border: 1px solid #6e7c8b;
   --shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
@@ -47,19 +48,42 @@ body {
   display: grid;
   place-items: center;
   background: var(--gradient);
+  background-size: cover;
 }
 
 @media (max-width: 390px) {
-  body {
+  .background-1 {
     background-image: url("../images/vertical/1.jpg");
-    background-size: cover;
+  }
+  .background-2 {
+    background-image: url("../images/vertical/2.jpg");
+  }
+  .background-3 {
+    background-image: url("../images/vertical/3.jpg");
+  }
+  .background-4 {
+    background-image: url("../images/vertical/4.jpg");
+  }
+  .background-5 {
+    background-image: url("../images/vertical/5.jpg");
   }
 }
 
 @media screen and (orientation: landscape) {
-  body {
+  .background-1 {
     background-image: url("../images/landscape/1.jpg");
-    background-size: cover;
+  }
+  .background-2 {
+    background-image: url("../images/landscape/2.jpg");
+  }
+  .background-3 {
+    background-image: url("../images/landscape/3.jpg");
+  }
+  .background-4 {
+    background-image: url("../images/landscape/4.jpg");
+  }
+  .background-5 {
+    background-image: url("../images/landscape/5.jpg");
   }
 }
 
