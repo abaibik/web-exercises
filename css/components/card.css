@@ -1,5 +1,5 @@
 .card {
-  margin-top: 10rem;
+  margin-top: 8rem;
   width: 20rem;
   aspect-ratio: 1/1.5;
   border: var(--border);
@@ -17,7 +17,7 @@
     height: 45vh;
   }
   .bookmark-button {
-    background-color: #435567;
+    background-color: var(--dark-gray);
   }
 }
 
@@ -32,7 +32,8 @@
   position: absolute;
   right: 5rem;
   top: -1rem;
-  background-color: #88929d;
+  background: var(--gradient);
+  border-radius: 50%;
   transition: 0.5s;
 }
 
@@ -43,7 +44,7 @@
 }
 
 .icon {
-  color: var(--dark-blue);
+  color: var(--dark-gray);
 }
 
 .icon:hover,
@@ -63,7 +64,7 @@
   text-decoration: none;
   border-radius: 2rem;
   align-self: center;
-  background-color: var(--light-blue);
+  background-color: var(--light-gray);
   box-shadow: var(--shadow);
   transition: 0.5s;
   position: relative;
@@ -106,6 +107,6 @@
   padding: 0.2rem;
   border: var(--thin-border);
   border-radius: 0.8rem;
-  background-color: var(--medium-blue);
+  background-color: var(--medium-gray);
   box-shadow: var(--shadow);
 }
