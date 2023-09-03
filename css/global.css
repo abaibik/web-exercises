@@ -45,7 +45,7 @@ a:link:active {
 
 body {
   background-image: var(--gradient);
-  min-height: 100vh;
+  height: 100vh;
   display: grid;
   place-items: center;
 }
