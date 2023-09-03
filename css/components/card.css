@@ -33,7 +33,7 @@
   right: 5rem;
   top: -1rem;
   background: var(--gradient);
-  border-radius: 50%;
+  border-radius: 40%;
   transition: 0.5s;
 }
 

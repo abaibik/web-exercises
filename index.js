@@ -5,11 +5,15 @@ const answerButton = card.querySelector("#answerButton");
 const questionElement = card.querySelector("#question");
 const answerElement = card.querySelector("#answer");
 
+let bookmarked = false;
+
 bookmarkButton.addEventListener("click", () => {
-  if (icon.style.fontVariationSettings === '"FILL" 0') {
-    icon.style.fontVariationSettings = '"FILL" 1';
-  } else {
+  if (bookmarked) {
     icon.style.fontVariationSettings = '"FILL" 0';
+    bookmarked = false;
+  } else {
+    icon.style.fontVariationSettings = '"FILL" 1';
+    bookmarked = true;
   }
 });
 
