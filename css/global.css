@@ -49,27 +49,26 @@ body {
   place-items: center;
   background: var(--gradient);
   background-size: cover;
+  transition: 1s;
 }
 
-@media (max-width: 390px) {
-  .background-1 {
-    background-image: url("../images/vertical/1.jpg");
-  }
-  .background-2 {
-    background-image: url("../images/vertical/2.jpg");
-  }
-  .background-3 {
-    background-image: url("../images/vertical/3.jpg");
-  }
-  .background-4 {
-    background-image: url("../images/vertical/4.jpg");
-  }
-  .background-5 {
-    background-image: url("../images/vertical/5.jpg");
-  }
+.background-1 {
+  background-image: url("../images/vertical/1.jpg");
+}
+.background-2 {
+  background-image: url("../images/vertical/2.jpg");
+}
+.background-3 {
+  background-image: url("../images/vertical/3.jpg");
+}
+.background-4 {
+  background-image: url("../images/vertical/4.jpg");
+}
+.background-5 {
+  background-image: url("../images/vertical/5.jpg");
 }
 
-@media screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) and (min-width: 768px) {
   .background-1 {
     background-image: url("../images/landscape/1.jpg");
   }
