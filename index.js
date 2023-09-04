@@ -35,6 +35,8 @@ function showContent(i) {
 let index = 0;
 
 nextButton.addEventListener("click", () => {
+  questionElement.classList.remove("hidden");
+  answerElement.classList.add("hidden");
   index++;
   if (index === quizData.length) {
     index = 0;
@@ -56,7 +58,7 @@ answerButton.addEventListener("click", () => {
 
 let i = 1;
 const imageCount = 5;
-let slideTime = 3000; // 3 seconds
+let slideTime = 5000; // 3 seconds
 
 function changePicture() {
   body.classList.remove(`background-${i}`);
